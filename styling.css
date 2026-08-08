@@ -68,3 +68,106 @@ nav a{
     z-index: -1; /* Ensures it stays behind all content */
     pointer-events: none; /* Prevents video from catching mouse clicks */
 }
+
+.auth-modal {
+    position:fixed;
+    width:420px;
+    height:440px;
+    background: rgba(12, 12, 12, 0.5);
+    border: 2px solid rgba(225,225,225,0.3);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter:blur(20px);
+    color:white;
+    inset:0;
+    margin:auto;
+    display:flex;
+    align-items:center;
+}
+
+.auth-modal .form-box {
+    width:100%;             
+    padding: 40px;
+}
+
+.form-box h2 {
+    font-size:35px;
+    text-align:center;
+}
+
+.input-box {
+    position:relative;
+    width:100%;
+    height:50px;
+    margin:30px 0;
+}
+
+.input-box input {
+    width:100%;
+    height:100%;
+    background: transparent;
+    border: 2px solid rgba(225,225,225,0.3);
+    outline:none;
+    border-radius: 40px;
+    font-size:16px;
+    color:white;
+    padding: 20px 45px 20px 20px;
+}   
+
+.input-box input::placeholder {
+    color:white;
+}
+
+.input-box i {
+    position:absolute;
+    right:20px; 
+    top:50%;
+    transform: translateY(-50%);
+    font-size:20px;
+}
+
+.btn {
+    width:100%;
+    height:45px;
+    background:white;
+    border-radius:40px;
+    border:none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size:18px;
+    color:#222;
+    font-weight: 500;
+    cursor:pointer;
+}
+
+.form-box p {
+    font-size:14.5px;
+    text-align:center;
+    margin:25px 0 10px;
+
+}
+
+.form-box p a {
+    color:white;
+    text-decoration:none;
+    font-weight: 600;
+}
+
+.form-box p a {
+    text-decoration:underline;
+}       
+
+
+.auth-modal .close-btn-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:45px;
+    height:45px;
+    background: transparent;
+    border-bottom-left-radius: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+}
