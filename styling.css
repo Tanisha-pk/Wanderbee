@@ -83,11 +83,39 @@ nav a{
     margin:auto;
     display:flex;
     align-items:center;
+    transition: height 0.2s ease;
+}
+
+.auth-modal.slide {
+    height:490px;
 }
 
 .auth-modal .form-box {
     width:100%;             
     padding: 40px;
+}
+
+.auth-modal .form-box.login,
+.auth-modal.slide .form-box.register {
+    transform: translateX(0);
+    transition:transform 0.18s ease;
+}
+
+.auth-modal.slide .form-box.login {
+    transform: translateX(-400px);
+    transition:none;
+}
+
+
+.auth-modal.slide .form-box.register {
+    position:absolute;
+    transform: translateX(400px);
+}
+
+
+.auth-modal .form-box.register {
+    position:absolute;
+    transform: translateX(400px);
 }
 
 .form-box h2 {
